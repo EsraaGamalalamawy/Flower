@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/styling.css">
+        <link rel="icon" href="images/icon2.webp">
+        <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="left">
+                <img src="images/icon2.webp">
+            </div>
+            <ul class="righthome">
+                <li>
+                    <i class="fa-solid fa-heart " id="lovetag"></i>
+                    <div id="lovePage">
+                        <i class="fa-solid fa-circle-xmark" id="closelove"></i>
+                        <div id="lovebox"></div>
+                    </div>
+                </li>
+                <li class="shoppingcart">
+                    <i class="fa-solid fa-basket-shopping" id="shoppingtag"></i>
+                    <span id="counter"></span>
+                </li>
+                <div id="shoppingPage">
+                    <i class="fa-solid fa-circle-xmark" id="closeshopping"></i>
+                    <div id="addedbox"></div>
+                    <button id="buy">Buy now</button>
+                </div>
+                <li id="username"></li>
+                <li class="logout"><a href="index.html">Log Out</a></li>
+            </ul>
+        </header>
+        <div class="boxsettings">
+            <i class="fa-sharp fa-solid fa-gear" id="settings"></i>
+            <div id="settingstap">
+                <p>Choose main color</p>
+                <div class="colors">
+                    <div class="active" data-color="#bfc5c6"></div>
+                    <div data-color="#c94137"></div>
+                    <div data-color="#009688"></div>
+                    <div data-color="#E91E63"></div>
+                    <div data-color="rgb(49 130 167)"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+        </div>
+
+
+
+        <script src="script.js"></script>
+        <script src="color.js"></script>
+    </body>
+</html>

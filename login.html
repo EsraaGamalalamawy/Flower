@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="css/styling.css">
+        <link rel="icon" href="images/icon2.webp">
+        <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="left">
+                <img src="images/icon2.webp">
+            </div>
+            <ul class="right">
+                <li><a href="login.html">login</a></li>
+                <li><a href="index.html">Signup</a></li>
+            </ul>
+        </header>
+        <div class="boxsettings">
+            <i class="fa-sharp fa-solid fa-gear" id="settings"></i>
+            <div id="settingstap">
+                <p>Choose main color</p>
+                <div class="colors">
+                    <div class="active" data-color="#bfc5c6"></div>
+                    <div data-color="#c94137"></div>
+                    <div data-color="#009688"></div>
+                    <div data-color="#E91E63"></div>
+                    <div data-color="rgb(49 130 167)"></div>
+                </div>
+            </div>
+        </div>
+        <div id="form">
+            <div class="name" id="nametitle">Log In</div>
+            <label id="forname"></label>
+            <div class="boxpassword">
+                <i class="fa-solid fa-user i"></i>
+                <input type="text" placeholder=" UserName ..." id="name" onchange="change(1)">
+            </div>
+            <label id="forpass"></label>
+            <div class="boxpassword">
+                <i class="fa-solid fa-lock i"></i>
+                <input type="password" placeholder=" Password ..." id="password" onchange="change(3)">
+                <h3 id="show_hidden"><i class="fa-regular fa-eye"></i></h3>
+                <div class="options">
+                    <p class="forget"><a href="forget.html">Forget password?</a></p>
+                    <div id="toggle">
+                        <div id="circle"></div>
+                        <p>Remember_me</p>
+                    </div>
+                </div>
+
+            </div>
+            <input type="submit" value="Login" id="signup">
+            <p class="next">Don't have an account? <a href="index.html">Sign Up</a></p>
+        </div>
+
+        <script src="login.js"></script>
+        <script src="color.js"></script>
+    </body>
+</html>

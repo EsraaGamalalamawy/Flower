@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forget Password</title>
+        <link rel="stylesheet" href="css/styling.css">
+        <link rel="icon" href="images/icon2.webp">
+        <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="left">
+                <img src="images/icon2.webp">
+            </div>
+            <ul class="right">
+                <li><a href="login.html">login</a></li>
+                <li><a href="index.html">Signup</a></li>
+            </ul>
+        </header>
+        <div class="boxsettings">
+            <i class="fa-sharp fa-solid fa-gear" id="settings"></i>
+            <div id="settingstap">
+                <p>Choose main color</p>
+                <div class="colors">
+                    <div class="active" data-color="#bfc5c6"></div>
+                    <div data-color="#c94137"></div>
+                    <div data-color="#009688"></div>
+                    <div data-color="#E91E63"></div>
+                    <div data-color="rgb(49 130 167)"></div>
+                </div>
+            </div>
+        </div>
+        <div id="form">
+            <div class="name" id="nametitle">Forget Password</div>
+            <label id="forname"></label>
+            <div class="boxpassword">
+                <i class="fa-solid fa-user i"></i>
+                <input type="text" placeholder="Your UserName" id="name" onchange="change(1)">
+            </div>
+            <label id="foremail"></label>
+            <div class="boxpassword"> 
+                <i class="fa-solid fa-envelope i"></i>
+                <input type="email" placeholder="Your Email ..." id="email" onchange="change(2)">
+            </div>
+            <input type="submit" value="Show your Password" id="signup">
+            <p class="next"></p>
+            <label id="fornewpass"></label>
+            <div id="boxnewpassword">
+                <i class="fa-solid fa-lock i"></i>
+                <input type="password" placeholder=" New password(option) ..." id="newpass" onchange="change(3)">
+                <h3 id="show_hidden3"><i class="fa-regular fa-eye"></i></h3>
+            </div>
+            <input type="submit" value="Change your Password" id="change">
+        </div>
+
+        <script src="forget.js"></script>
+        <script src="color.js"></script>
+    </body>
+</html>
